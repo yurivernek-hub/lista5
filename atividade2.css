@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.fundo {
+  min-height: 100vh;
+  background-image: url('atividade2.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 96px 24px 60px;
+}
+
+.caixa {
+  flex: 1 1 320px;
+  max-width: 420px;
+  background-color: rgba(20, 40, 70, 0.55);
+  color: #f2f2f2;
+  border-radius: 6px;
+  padding: 28px 30px;
+  line-height: 1.7;
+  backdrop-filter: blur(2px);
+}
+
+.caixa p {
+  margin-bottom: 16px;
+}
+
+.caixa p:last-child {
+  margin-bottom: 0;
+}
+
+.navegacao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+.botao-nav {
+  font-family: Georgia, 'Times New Roman', serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: background-color 0.15s ease;
+}
+
+.botao-nav:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+}
+
+.botao-nav.desabilitado {
+  opacity: 0.3;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0.2);
+}
