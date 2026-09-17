@@ -25,26 +25,24 @@ body {
   overflow: hidden;
 }
 
-.topo .banner {
+.banner {
   height: 220px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 14px solid #111111;
-  border-image: repeating-linear-gradient(45deg, #111 0, #111 8px, #333 8px, #333 16px) 14;
 }
 
-.topo .texto {
+.texto {
   padding: 28px 34px;
 }
 
-.topo h1 {
+.texto h1 {
   color: #e88d1f;
   font-size: 30px;
   margin-bottom: 14px;
 }
 
-.topo p,
+.texto p,
 .secao p {
   line-height: 1.7;
   color: #2b2b2b;
